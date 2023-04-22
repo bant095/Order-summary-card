@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    background: white;
+    margin: auto;
+    margin-top: 30px;
+    width: 400px;
+    height: 520px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.section .top-section {
+    align-items: center;
+    text-align: center;
+}
+
+.section .top-section img {
+    width: 400px;
+    border-radius: 15px 15px 0 0;
+    border: none;
+}
+
+.section  h2 {
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.section p {
+    text-align: center;
+    line-height:20px;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* .section .plan {
+    
+    background: hsl(225, 100%, 98%);
+    width: 300px;
+    align-items: center;
+    margin-left: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    border-radius: 5px;   
+} */
+
+/*TOTAL PLAN*/
+
+.total-plan {
+    background: hsl(225, 100%, 98%);
+    width: 320px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 5px;
+    margin: 0 24px 24px 38px;
+}
+
+.total-plan .left-plan {
+    display: flex;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.total-plan .plan {
+    padding-left: 18px;
+    gap: 3px;
+    text-align: left;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.total-plan .plan h3 {
+    font-size: 14px;
+    font-family: 'Red Hat Display', sans-serif;
+    padding-top: 22px;
+    font-weight: 700;
+}
+
+.total-plan .plan p {
+    font-size: 14px;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: left;
+    padding: 0 70px 20px 0px;
+}
+
+.right-plan a {
+    font-weight: 700;
+    font-size: 12px;
+    opacity: 1;
+    color: hsl(245, 75%, 52%);
+    transition: all .2s ease;
+    font-family: 'Red Hat Display', sans-serif;
+    padding-right: 20px;
+}
+
+
+/*BUTTON*/
+
+.btn-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    gap: 10px;
+    margin-left: 45px; 
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+.payment-btn {
+    all: unset;
+    cursor: pointer;
+    background: hsl(245, 75%, 52%);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    width: 310px;
+    height: 35px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding-top: 10ox;
+    color: white;
+  }
+
+  .cancel-btn {
+    text-decoration: none;
+    padding-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 5px 50px 45px 0px;
+    transition: color .2s ease;
+  }
+
+.payment-btn:hover {
+    background:hsl(310, 92%, 36%);
+}
+
+.section .btn{
+    border: none;
+    padding: 10px 160px;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    padding-top: 5px;
+    cursor: pointer;
+    outline:none;
+    text-align: center;
+}
+
+.cancel-btn:hover {
+    color:hsl(224, 23%, 55%);
+ }
+
+
+/*MEDIA QUARIES*/
+
+@media (min-width: 375px) {
+    body {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .section {
+        width: 320px;
+    }
+    
+    .section .top-section img {
+        width: 320px;
+    }
+
+    .total-plan {
+        width: 260px;
+        margin: 0 30px 15px 30px;
+    }
+
+    .btn-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .payment-btn {
+        width: 250px;
+        margin: 5px 30px 5px 0px;
+        align-items: center;
+    }
+
+    .cancel-btn {
+        align-items: center;
+    }
+
+}
+
+
